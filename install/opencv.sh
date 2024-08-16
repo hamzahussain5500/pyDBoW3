@@ -104,6 +104,6 @@ else
           -DPYTHON_INCLUDE_DIR=$(python -c "from distutils.sysconfig import get_python_inc; print(get_python_inc())") \
           -DPYTHON_PACKAGES_PATH=$(python -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())") \
           ..
-    make -j12 || exit 1
+    make -j8 || exit 1
     sudo make install
 fi
